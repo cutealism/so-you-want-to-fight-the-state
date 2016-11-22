@@ -1,0 +1,80 @@
+{
+    "start": {
+        "description": "So you wanna fight the state with your friends? Better be able to talk to them without the state listening in. We like to fight the state with Signal - it makes it really hard for anyone to read what you're writing to other folks, especially if they also have Signal. You can send text messages, make calls, and even chat on a laptop on Signal, all without the state listening in (probably). What's your communication device?",
+        "next_steps": [
+            {
+                "prompt": "An Android!",
+                "step": "android_install"
+            },
+            {
+                "prompt": "An iPhone!",
+                "step": "ios_install"
+            },
+            {
+                "prompt": "A laptop!",
+                "step": "chrome_install"
+            },
+            {
+                "prompt": "Just my mouth!",
+                "step": "aww"
+            }
+        ]
+    },
+     "android_install": {
+        "description": "To install Signal on an Android phone, visit https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms and download the app. If that's hard to do, you can search for ",
+        "next_steps": [
+            {
+                "prompt": "I did it!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I couldn't do it!",
+                "step": "aww"
+            }
+        ]
+    },
+     "ios_install": {
+        "description": "To install Signal on an Android phone, visit https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms and download the app. If that's hard to do, you can search for ",
+        "next_steps": [
+            {
+                "prompt": "I did it!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I couldn't do it!",
+                "step": "aww"
+            }
+        ]
+    },
+     "chrome_install": {
+        "description": "To install Signal on an Android phone, visit https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms and download the app. If that's hard to do, you can search for ",
+        "next_steps": [
+            {
+                "prompt": "I did it!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I couldn't do it!",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "Nice job!",
+        "next_steps": [
+            {
+                "prompt": "bye",
+                "step": "exit"
+            }
+        ]
+    },
+    "aww": {
+        "description": "Maybe next time!",
+        "next_steps": [
+            {
+                "prompt": "bye",
+                "step": "exit"
+            }
+        ]
+    }
+}
