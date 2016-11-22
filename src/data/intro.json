@@ -1,0 +1,79 @@
+{
+    "start": {
+        "title": "So we hear you want to fight the state!",
+        "next_steps": [
+            {
+                "prompt": "Yes! I do.",
+                "step": "fight"
+            },
+            {
+                "prompt": "Not really...",
+                "step": "learn_more"
+            }
+        ]
+    },
+    "learn_more": {
+        "title": "You should fight!"
+    },
+    "fight": {
+        "title": "How do you want to fight the state?",
+        "goals": [
+            {
+                "goal": "organize",
+                "description": "I want to fight the state with my friends!",
+                "subgoals": [
+                    {
+                        "goal": "chitchat",
+                        "badge": "signal"
+                    },
+                    {
+                        "goal": "network",
+                        "badge": "signal-network"
+                    }
+                ]
+            },
+            {
+                "goal": "travel",
+                "description": "I want to wander the world with my secrets safe from the state!",
+                "subgoals": [
+                    {
+                        "goal": "encrypt",
+                        "badge": "encrypt"
+                    },
+                    {
+                        "goal": "phone-passcode",
+                        "badge": "phone-passcode"
+                    }
+                ]
+            },
+            {
+                "goal": "self-defense",
+                "description": "I don't want the state to see what I see or to pretend to be me!",
+                "subgoals": [
+                    {
+                        "goal": "password",
+                        "badge": "password-manager"
+                    },
+                    {
+                        "goal": "2fa",
+                        "badge": "2fa"
+                    }
+                ]
+            },
+            {
+                "goal": "learn",
+                "description": "I want to learn all kinds of stuff without the state knowing what I know!",
+                "subgoals": [
+                    {
+                        "goal": "secure-browse",
+                        "badge": "tor"
+                    },
+                    {
+                        "goal": "search",
+                        "badge": "duckduckgo"
+                    }
+                ]
+            }
+        ]
+    }
+}
