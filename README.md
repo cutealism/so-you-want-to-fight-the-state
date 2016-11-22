@@ -5,7 +5,7 @@
 
 ```
 git clone git@github.com:imightbeamy/so-you-want-to-fight-the-state.git
-cd so-you-want-to-fight-the-state.git
+cd so-you-want-to-fight-the-state
 npm install
 npm start
 ```
