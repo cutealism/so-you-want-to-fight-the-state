@@ -60,11 +60,19 @@
         ]
     },
     "yay": {
-        "description": "Nice job!",
+        "description": "Nice job! Now you can communicate without eavesdroppers. You could work on something else now, or you could get your friends to install Signal too - so you can have secret-er conversations!",
+        "action": {
+            "type": "award",
+            "file": "signal.gif"
+        },
         "next_steps": [
             {
-                "prompt": "bye",
+                "prompt": "I want to do something else now!",
                 "step": "exit"
+            },
+            {
+                "prompt": "I want to get my friends to use signal!",
+                "file": "signal-network.json"
             }
         ]
     },
