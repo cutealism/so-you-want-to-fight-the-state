@@ -1,0 +1,50 @@
+[
+    {
+        "goal": "organize",
+        "subgoals": [
+            {
+                "goal": "chitchat",
+                "badge": "signal"
+            }
+        ]
+    },
+    {
+        "goal": "travel",
+        "subgoals": [
+            {
+                "goal": "encrypt",
+                "badge": "encrypt"
+            },
+            {
+                "goal": "phone-passcode",
+                "badge": "phone-passcode"
+            }
+        ]
+    },
+    {
+        "goal": "security",
+        "subgoals": [
+            {
+                "goal": "password",
+                "badge": "password-manager"
+            },
+            {
+                "goal": "2fa",
+                "badge": "2fa"
+            }
+        ]
+    },
+    {
+        "goal": "learn",
+        "subgoals": [
+            {
+                "goal": "secure-browse",
+                "badge": "tor"
+            },
+            {
+                "goal": "search",
+                "badge": "duckduckgo"
+            }
+        ]
+    }
+]
