@@ -13,7 +13,13 @@
         ]
     },
     "learn_more": {
-        "title": "You should fight!"
+        "title": "You should fight!",
+        "next_steps": [
+            {
+                "prompt": "Ok, I'll fight",
+                "step": "fight"
+            }
+        ]
     },
     "fight": {
         "title": "How do you want to fight the state?",

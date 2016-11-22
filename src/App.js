@@ -38,15 +38,20 @@ class App extends Component {
     });
   }
 
+  restart = () => {
+    this.startGoal('intro', 'fight')
+  }
+
   render() {
     return (
       <div className="App">
         <Action
             onNextStep={this.updateStep}
             onStartGoal={this.startGoal}
+            onRestart={this.restart}
             step={data[this.state.goal][this.state.location]}></Action>
 
-        <button onClick={() => this.startGoal('intro', 'fight')}>Restart</button>
+        <button onClick={this.restart}>Restart</button>
       </div>
     );
   }

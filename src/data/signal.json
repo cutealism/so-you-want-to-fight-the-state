@@ -72,7 +72,7 @@
             },
             {
                 "prompt": "I want to get my friends to use signal!",
-                "next_goal": "signal-network"
+                "goal": "signalNetwork"
             }
         ]
     },
@@ -81,7 +81,7 @@
         "next_steps": [
             {
                 "prompt": "bye",
-                "step": "exit"
+                "restart": "true"
             }
         ]
     }

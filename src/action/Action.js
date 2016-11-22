@@ -3,16 +3,27 @@ import './Action.css';
 import Goal from './Goals';
 
 class Action extends Component {
+
+  onNextStepSelect = (step) => {
+      if (step.step) {
+          this.props.onNextStep(step.step);
+      } else if (step.goal) {
+          this.props.onStartGoal(step.goal);
+      } else if (step.restart) {
+          this.props.onRestart();
+      }
+  }
+
   render() {
     return (
       <div className="Action">
-        <h2>{this.props.step.title}</h2>
+        <h1>{this.props.step.title}</h1>
         <p>{this.props.step.description}</p>
-        {this.props.step.next_steps && this.props.step.next_steps.map((s) =>
+        {this.props.step.next_steps && this.props.step.next_steps.map((prompt) =>
             <button
-                key={s.step}
-                onClick={() => this.props.onNextStep(s.step)}>
-              {s.prompt}</button>)
+                key={prompt.step || prompt.goal || "restart"}
+                onClick={() => this.onNextStepSelect(prompt)}>
+              {prompt.prompt}</button>)
         }
         {this.props.step.goals && this.props.step.goals.map((g) =>
             <Goal

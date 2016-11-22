@@ -73,7 +73,7 @@
         "next_steps": [
             {
                 "prompt": "bye",
-                "step": "exit"
+                "restart": "true"
             }
         ]
     }
