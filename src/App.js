@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import intro from './data/intro.json';
 import signal from './data/signal.json';
+import signalNetwork from './data/signal-network.json';
 import Action from './action/Action.js';
 
 const data = {
   intro: intro,
   signal: signal,
+  signalNetwork: signalNetwork,
 };
 
 class App extends Component {

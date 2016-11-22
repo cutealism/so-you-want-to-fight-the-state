@@ -28,7 +28,7 @@
                     },
                     {
                         "goal": "network",
-                        "badge": "signal-network"
+                        "badge": "signalNetwork"
                     }
                 ]
             },
