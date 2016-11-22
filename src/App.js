@@ -15,10 +15,14 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
+    this.state = localStorage.state ? JSON.parse(localStorage.state) : {
       location: 'start',
       goal: 'intro'
     };
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    localStorage.state = JSON.stringify(this.state);
   }
 
   updateStep = (step) => {
@@ -27,9 +31,9 @@ class App extends Component {
     });
   }
 
-  startGoal = (goal) => {
+  startGoal = (goal, step) => {
     this.setState({
-      location: 'start',
+      location: step || 'start',
       goal: goal
     });
   }
@@ -41,6 +45,8 @@ class App extends Component {
             onNextStep={this.updateStep}
             onStartGoal={this.startGoal}
             step={data[this.state.goal][this.state.location]}></Action>
+
+        <button onClick={() => this.startGoal('intro', 'fight')}>Restart</button>
       </div>
     );
   }
