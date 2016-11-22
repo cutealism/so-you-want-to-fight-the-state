@@ -1,15 +1,21 @@
 [
     {
         "goal": "organize",
+        "description": "I want to fight the state with my friends!",
         "subgoals": [
             {
                 "goal": "chitchat",
                 "badge": "signal"
+            },
+            {
+                "goal": "network",
+                "badge": "signal-network"
             }
         ]
     },
     {
         "goal": "travel",
+        "description": "I want to wander the world with my secrets safe from the state!",
         "subgoals": [
             {
                 "goal": "encrypt",
@@ -22,7 +28,8 @@
         ]
     },
     {
-        "goal": "security",
+        "goal": "self-defense",
+        "description": "I don't want the state to see what I see or to pretend to be me!",
         "subgoals": [
             {
                 "goal": "password",
@@ -36,6 +43,7 @@
     },
     {
         "goal": "learn",
+        "description": "I want to learn all kinds of stuff without the state knowing what I know!",
         "subgoals": [
             {
                 "goal": "secure-browse",
