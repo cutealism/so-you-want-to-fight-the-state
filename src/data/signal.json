@@ -72,7 +72,7 @@
             },
             {
                 "prompt": "I want to get my friends to use signal!",
-                "file": "signal-network.json"
+                "next_goal": "signal-network"
             }
         ]
     },
