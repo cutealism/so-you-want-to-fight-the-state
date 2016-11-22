@@ -34,7 +34,7 @@
         ]
     },
      "ios_install": {
-        "description": "To install Signal on an iOS device phone, visit https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms and download the app. If that's hard to do, you can search for ",
+        "description": "To install Signal on an iPhone or tablet ",
         "next_steps": [
             {
                 "prompt": "I did it!",
@@ -60,19 +60,11 @@
         ]
     },
     "yay": {
-        "description": "Nice job! Now you can communicate without eavesdroppers. You could work on something else now, or you could get your friends to install Signal too - so you can have secret-er conversations!",
-        "action": {
-            "type": "award",
-            "file": "signal.gif"
-        },
+        "description": "Nice job!",
         "next_steps": [
             {
-                "prompt": "I want to do something else now!",
+                "prompt": "bye",
                 "step": "exit"
-            },
-            {
-                "prompt": "I want to get my friends to use signal!",
-                "file": "signal-network.json"
             }
         ]
     },
