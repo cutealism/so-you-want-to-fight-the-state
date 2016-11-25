@@ -1,3 +1,38 @@
 .App {
   text-align: center;
 }
+
+/* color pink = color(255, 34, 168);
+// color yellow = color(255, 255, 34);
+// color blue =  color(36, 236, 255);
+// color green = color(174, 252, 0); */
+
+h1,h2,h3 {
+    -webkit-font-smoothing: none;
+    font-family: monospace;
+    color: rgb(255, 34, 168);
+}
+
+button {
+  color: rgb(57, 217, 232);
+  text-decoration: underline;
+  background: none;
+  border: none;
+  -webkit-font-smoothing: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  border: solid 1px white;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  border: solid 1px rgb(57, 217, 232);
+  outline: none;
+  text-decoration: none;
+}
