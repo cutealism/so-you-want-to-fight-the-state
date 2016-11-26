@@ -1,78 +1,78 @@
 {
     "start": {
-        "description": "So you wanna fight the state with your friends? Better be able to talk to them without the state listening in. We like to fight the state with Signal - it makes it really hard for anyone to read what you're writing to other folks, especially if they also have Signal. You can send text messages, make calls, and even chat on a laptop on Signal, all without the state listening in (probably). What's your communication device?",
+        "description": "So you wanna fight the state with your friends? Better be able to talk to them without the state listening in. The more of your friends use Signal, the less eavesdropping there will be. It's also awesome to get folks in your family or at your job to use encrypted messaging – the more people who use it, the more effective it is. You can just be talking about ice cream and hugs – no need to talk about smashing the state at all.",
         "next_steps": [
             {
-                "prompt": "An Android!",
-                "step": "android_install"
+                "prompt": "Let's go! I have friends!",
+                "step": "inviting"
             },
             {
-                "prompt": "An iPhone!",
-                "step": "ios_install"
-            },
-            {
-                "prompt": "A laptop!",
-                "step": "chrome_install"
-            },
-            {
-                "prompt": "Just my mouth!",
+                "prompt": "I don't have any friends!",
                 "step": "aww"
             }
         ]
     },
-     "android_install": {
-        "description": "To install Signal on an Android phone, visit https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms and download the app. If that's hard to do, you can search for Signal on Google Play.",
+     "inviting": {
+        "description": "There are two strategies to convince your friends to use encrypted messaging. One is to convince them it's super convenient (not <i>entirely</i> untrue!) The other is to convince them they also would like to fight the state (hopefully true!!!).",
         "next_steps": [
             {
-                "prompt": "I did it!",
+                "prompt": "Let me tell them how convenient secrets are to keep!",
+                "step": "convenience"
+            },
+            {
+                "prompt": "Let me convince them to help me fight the state!",
+                "step": "conversion"
+            }
+        ]
+    },
+     "convenience": {
+        "description": "To convince your friends using your encrypted messaging app is convenient, just invite them to use it every time you send them a message, and sometimes when you're not sending messages at all! This constant barrage of invites will be super annoying, and you're friends will all be chatting securely in no time! (Just kidding. You could tell them how Signal is available on hella platforms and desktop tho).",
+        "next_steps": [
+            {
+                "prompt": "Cool, did it!",
                 "step": "yay"
             },
             {
-                "prompt": "I couldn't do it!",
+                "prompt": "That wasn't super convincing; let me try bringing them around to my ideology instead.",
+                "step": "conversion"
+            },
+            {
+                "prompt": "Uh I don't wanna and my social anxiety is acting up; maybe later.",
                 "step": "aww"
             }
         ]
     },
-     "ios_install": {
-        "description": "To install Signal on an iPhone or tablet ",
+     "conversion": {
+        "description": "We can't exactly help you with this; everyone has their own journey and finds their own path. What we do know is that you probably underestimate how much influence you have on your friends and loved ones; most folks haven't thought too deeply about their politics, their power, state suppression, racism, classism, capitalism, sexism and the intersection of those things.",
         "next_steps": [
             {
-                "prompt": "I did it!",
+                "prompt": "It worked! I presented my friends with my sweet critique and we're all going to go to a march together in a min here!",
                 "step": "yay"
-            },
-            {
-                "prompt": "I couldn't do it!",
-                "step": "aww"
             }
-        ]
-    },
-     "chrome_install": {
-        "description": "To install Signal on an Android phone, visit https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms and download the app. If that's hard to do, you can search for ",
-        "next_steps": [
             {
-                "prompt": "I did it!",
-                "step": "yay"
+                "prompt": "They still really have a lot of faith in gods and masters to keep them safe; I'll convince them secret keeping is hella convenient instead!",
+                "step": "convenience"
             },
             {
-                "prompt": "I couldn't do it!",
+                "prompt": "Uh I don't wanna and my social anxiety is acting up; maybe later.",
                 "step": "aww"
             }
         ]
     },
     "yay": {
-        "description": "Nice job!",
+        "description": "Nice job! You're well on your way to subverting all kinds of state structures with your buds!",
         "next_steps": [
             {
-                "prompt": "bye",
+                "prompt": "Bye, friendly person!",
                 "step": "exit"
             }
         ]
     },
     "aww": {
-        "description": "Maybe next time!",
+        "description": "That's too bad! We like you, and we're your friends",
         "next_steps": [
             {
-                "prompt": "bye",
+                "prompt": "Bye, friend! <3<3<3",
                 "restart": "true"
             }
         ]
