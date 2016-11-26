@@ -34,7 +34,7 @@
         ]
     },
      "ios_install": {
-        "description": "To install Signal on an iOS device phone, visit https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms and download the app. If that's hard to do, you can search for ",
+        "description": "To install Signal on an iOS device, visit https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8 and download the app.",
         "next_steps": [
             {
                 "prompt": "I did it!",
@@ -47,7 +47,7 @@
         ]
     },
      "chrome_install": {
-        "description": "To install Signal on an Android phone, visit https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms and download the app. If that's hard to do, you can search for ",
+        "description": "To install Signal for desktop, visit https://chrome.google.com/webstore/detail/signal-private-messenger/bikioccmkafdpakkkcpdbppfkghcmihk?hl=en .",
         "next_steps": [
             {
                 "prompt": "I did it!",
