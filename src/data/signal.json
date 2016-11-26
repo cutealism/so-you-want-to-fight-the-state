@@ -21,7 +21,7 @@
         ]
     },
      "androidInstall": {
-        "description": "To install Signal on an Android phone, visit https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms and download the app. If that's hard to do, you can search for Signal on Google Play.",
+        "description": "To install Signal on an Android phone, visit <a href='https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms'>the Play Store</a> and download the app. If that's hard to do, you can search for Signal on Google Play.",
         "nextSteps": [
             {
                 "prompt": "I did it!",
