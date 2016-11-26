@@ -18,7 +18,7 @@ class Action extends Component {
     return (
       <div className="Action">
         <h1>{this.props.step.title}</h1>
-        <p>{this.props.step.description}</p>
+        <p dangerouslySetInnerHTML={{__html: this.props.step.description}}></p>
         {this.props.step.next_steps && this.props.step.next_steps.map((prompt) =>
             <button
                 key={prompt.step || prompt.goal || "restart"}

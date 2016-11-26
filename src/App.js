@@ -45,13 +45,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h2>{this.state.goal !== "intro" && this.state.goal}</h2>
         <Action
             onNextStep={this.updateStep}
             onStartGoal={this.startGoal}
             onRestart={this.restart}
             step={data[this.state.goal][this.state.location]}></Action>
 
-        <button onClick={this.restart}>Restart</button>
+        {this.state.goal !== "intro" && <a className="restart" onClick={this.restart}>Restart</a>}
       </div>
     );
   }
