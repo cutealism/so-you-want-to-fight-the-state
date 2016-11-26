@@ -1,0 +1,94 @@
+{
+    "start": {
+        "description": "So, you're have someone else's secrets. Nice job! Someone trusts you. It takes a lot to get there. But are you protecting those secrets? How well? Maybe you have secrets of your own to protect. If you haven't encrypted your main computer, now's a great time to do it, especially if you'll be travelling.
+
+            What kind of computer do you have?",
+        "nextSteps": [
+            {
+                "prompt": "Linux, natch.",
+                "step": "linux"
+            },
+            {
+                "prompt": "A Mac, covered in stickers",
+                "step": "mac"
+            },
+            {
+                "prompt": "Windows.",
+                "step": "windows"
+            },
+            {
+                "prompt": "My computer is already encrypted; did you think I was new?",
+                "step": "yay"
+            },
+            {
+                "prompt": "I only have a phone or a stick. No computer though.",
+                "step": "aww"
+            }
+        ]
+    },
+    "linux": {
+        "description": "Cool. You probably had an option to turn on full-disk encryption when you got started, and hopefully you did it. You'll know you have it on if you have to enter a password every time you turn on your computer. If you don't have it on, look up the directions for how to encrypt your hard drive for your distro. Sorry to not give you more in depth instructions, but if you are on Linux you probably don't need too much handholding tbqh.",
+        "nextSteps": [
+            {
+                "prompt": "It worked! I did the thing!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I don't have enough time & I'm terrified of bricking my computer.",
+                "step": "aww"
+            }
+        ]
+    },
+    "windows": {
+        "description": "Cool.",
+        "nextSteps": [
+            {
+                "prompt": "It worked! I did the thing!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I don't have enough time & I'm terrified of bricking my computer.",
+                "step": "aww"
+            }
+        ]
+    },
+    "mac": {
+        "description": "Cool.",
+        "nextSteps": [
+            {
+                "prompt": "It worked! I did the thing!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I don't have enough time & I'm terrified of bricking my computer.",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "Nice job! Now you can communicate without eavesdroppers. You could work on something else now, or you could get your friends to install Signal too - so you can have secret-er conversations!",
+        "action": {
+            "type": "award",
+            "file": "signal.gif"
+        },
+        "nextSteps": [
+            {
+                "prompt": "I want to do something else now!",
+                "step": "exit"
+            },
+            {
+                "prompt": "I want to get my friends to use signal!",
+                "goal": "signalNetwork"
+            }
+        ]
+    },
+    "aww": {
+        "description": "Maybe next time!",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}

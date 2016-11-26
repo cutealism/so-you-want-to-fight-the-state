@@ -1,7 +1,7 @@
 {
     "start": {
         "description": "So you wanna fight the state with your friends? Better be able to talk to them without the state listening in. The more of your friends use Signal, the less eavesdropping there will be. It's also awesome to get folks in your family or at your job to use encrypted messaging – the more people who use it, the more effective it is. You can just be talking about ice cream and hugs – no need to talk about smashing the state at all.",
-        "next_steps": [
+        "nextSteps": [
             {
                 "prompt": "Let's go! I have friends!",
                 "step": "inviting"
@@ -14,7 +14,7 @@
     },
      "inviting": {
         "description": "There are two strategies to convince your friends to use encrypted messaging. One is to convince them it's super convenient (not <i>entirely</i> untrue!) The other is to convince them they also would like to fight the state (hopefully true!!!).",
-        "next_steps": [
+        "nextSteps": [
             {
                 "prompt": "Let me tell them how convenient secrets are to keep!",
                 "step": "convenience"
@@ -27,7 +27,7 @@
     },
      "convenience": {
         "description": "To convince your friends using your encrypted messaging app is convenient, just invite them to use it every time you send them a message, and sometimes when you're not sending messages at all! This constant barrage of invites will be super annoying, and you're friends will all be chatting securely in no time! (Just kidding. You could tell them how Signal is available on hella platforms and desktop tho).",
-        "next_steps": [
+        "nextSteps": [
             {
                 "prompt": "Cool, did it!",
                 "step": "yay"
@@ -44,7 +44,7 @@
     },
      "conversion": {
         "description": "We can't exactly help you with this; everyone has their own journey and finds their own path. What we do know is that you probably underestimate how much influence you have on your friends and loved ones; most folks haven't thought too deeply about their politics, their power, state suppression, racism, classism, capitalism, sexism and the intersection of those things.",
-        "next_steps": [
+        "nextSteps": [
             {
                 "prompt": "It worked! I presented my friends with my sweet critique and we're all going to go to a march together in a min here!",
                 "step": "yay"
@@ -61,7 +61,7 @@
     },
     "yay": {
         "description": "Nice job! You're well on your way to subverting all kinds of state structures with your buds!",
-        "next_steps": [
+        "nextSteps": [
             {
                 "prompt": "Bye, friendly person!",
                 "step": "exit"
@@ -70,7 +70,7 @@
     },
     "aww": {
         "description": "That's too bad! We like you, and we're your friends",
-        "next_steps": [
+        "nextSteps": [
             {
                 "prompt": "Bye, friend! <3<3<3",
                 "restart": "true"
