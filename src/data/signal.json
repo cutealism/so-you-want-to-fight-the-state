@@ -1,6 +1,15 @@
 {
     "start": {
-        "description": "So you wanna fight the state with your friends? Better be able to talk to them without the state listening in. We like to fight the state with Signal - it makes it really hard for anyone to read what you're writing to other folks, especially if they also have Signal. You can send text messages, make calls, and even chat on a laptop on Signal, all without the state listening in (probably). What's your communication device?",
+        "description": "So you wanna fight the state with your friends? Better be able to talk to them without the state listening in. We like to fight the state with Signal - it makes it really hard for anyone to read what you're writing to other folks, especially if they also have Signal. You can send text messages, make calls, and even chat on a laptop on Signal, all without the state listening in (probably).",
+        "nextSteps": [
+            {
+                "prompt": "Cool! I want to install Signal.",
+                "step": "platform"
+            }
+        ]
+    },
+    "platform": {
+        "description": "What's your communication device?",
         "nextSteps": [
             {
                 "prompt": "An Android!",
@@ -68,7 +77,11 @@
         "nextSteps": [
             {
                 "prompt": "I want to do something else now!",
-                "step": "exit"
+                "restart": "true"
+            },
+            {
+                "prompt": "I want to install Signal on another device.",
+                "step": "platform"
             },
             {
                 "prompt": "I want to get my friends to use signal!",

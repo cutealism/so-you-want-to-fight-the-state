@@ -1,38 +1,27 @@
 import React, { Component } from 'react';
-import './Action.css';
-import Goal from './Goals';
 
 class Action extends Component {
 
-  onNextStepSelect = (step) => {
-      if (step.step) {
-          this.props.onNextStep(step.step);
-      } else if (step.goal) {
-          this.props.onStartGoal(step.goal);
-      } else if (step.restart) {
+  onNextStepSelect = (data) => {
+      if (data.step) {
+          this.props.onNextStep(data.step);
+      } else if (data.goal) {
+          this.props.onStartGoal(data.goal);
+      } else if (data.restart) {
           this.props.onRestart();
       }
   }
 
   render() {
-    return (
-      <div className="Action">
-        <h1>{this.props.step.title}</h1>
-        <p dangerouslySetInnerHTML={{__html: this.props.step.description}}></p>
-        {this.props.step.nextSteps && this.props.step.nextSteps.map((prompt) =>
+    return <div>
+        <p dangerouslySetInnerHTML={{__html: this.props.data.description}}></p>
+        {this.props.data.nextSteps && this.props.data.nextSteps.map((prompt) =>
             <button
                 key={prompt.step || prompt.goal || "restart"}
                 onClick={() => this.onNextStepSelect(prompt)}>
               {prompt.prompt}</button>)
         }
-        {this.props.step.goals && this.props.step.goals.map((g) =>
-            <Goal
-                key={g.goal}
-                onStartGoal={this.props.onStartGoal}
-                goal={g}></Goal>)
-        }
       </div>
-    );
   }
 }
 
