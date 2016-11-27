@@ -61,6 +61,9 @@
     },
     "yay": {
         "description": "Nice job! You're well on your way to subverting all kinds of state structures with your buds!",
+        "action": {
+            "type": "award"
+        },
         "nextSteps": [
             {
                 "prompt": "Bye, friendly person!",

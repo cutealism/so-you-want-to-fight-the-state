@@ -9,6 +9,7 @@ class Step extends Component {
       case 'menu':
         return <Menu
                 onStartGoal={this.props.onStartGoal}
+                completedGoals={this.props.completedGoals}
                 topics={this.props.data.topics}></Menu>
       default:
         return <Action

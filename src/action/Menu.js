@@ -13,8 +13,8 @@ class Menu extends Component {
   }
 
   renderGoal = (goal) =>  {
-    const badge = "badges/signal.gif";
-    //const badge = `badges/${g.badge}.${(g.goal.isCompleted ? "gif" : "png")}`
+    const isCompleated = !!this.props.completedGoals[goal.key]
+    const badge = goal.draft ? "badges/comingSoon.gif" : `badges/${goal.key}.${isCompleated ? "gif" : "png"}`
     const onClick = () => this.props.onStartGoal(goal.key);
     return <div key={goal.key}>
             <p>

@@ -34,6 +34,7 @@
                         "key": "signal"
                     },
                     {
+                        "draft": true,
                         "title": "network",
                         "key": "signalNetwork"
                     }
@@ -44,10 +45,12 @@
                 "description": "I want to wander the world with my secrets safe from the state!",
                 "goals": [
                     {
+                        "draft": true,
                         "title": "encrypt",
                         "key": "encrypt"
                     },
                     {
+                        "draft": true,
                         "title": "phonePasscode",
                         "key": "phonePasscode"
                     }
@@ -62,6 +65,7 @@
                         "key": "passwordManager"
                     },
                     {
+                        "draft": true,
                         "title": "2fa",
                         "key": "2fa"
                     }
@@ -72,10 +76,12 @@
                 "description": "I want to learn all kinds of stuff without the state knowing what I know!",
                 "goals": [
                     {
+                        "draft": true,
                         "title": "secureBrowse",
                         "key": "tor"
                     },
                     {
+                        "draft": true,
                         "title": "search",
                         "key": "duckduckgo"
                     }
