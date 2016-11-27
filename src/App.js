@@ -19,11 +19,11 @@ class App extends Component {
     super(props);
 
     this.sound = new Audio("tada.mp3");
-    this.state = localStorage.state ? JSON.parse(localStorage.state) : {
+    this.state = Object.assign({
       location: 'start',
       goal: 'intro',
       completedGoals: {},
-    };
+    }, localStorage.state ? JSON.parse(localStorage.state) : {});
   }
 
   componentDidUpdate(prevProps, prevState) {
