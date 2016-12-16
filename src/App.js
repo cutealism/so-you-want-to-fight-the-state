@@ -82,7 +82,7 @@ class App extends Component {
             data={step_data}
             completedGoals={this.state.completedGoals} />
         {this.state.goal !== "intro" && <a className="restart" onClick={this.restart}>Restart</a>}
-      </div>;
+      </div>
   }
 }
 

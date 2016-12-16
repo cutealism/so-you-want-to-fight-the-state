@@ -50,6 +50,11 @@ button:focus {
   padding-bottom: 1px;
 }
 
+footer {
+  font-size: .8em;
+  padding-top: 20px;
+}
+
 @media (max-aspect-ratio: 1/1) {
   button {
       width: 80%;

@@ -14,7 +14,7 @@ class Menu extends Component {
 
   renderGoal = (goal) =>  {
     const isCompleated = !!this.props.completedGoals[goal.key]
-    const badge = goal.draft ? "badges/comingSoon.gif" : `badges/${goal.key}.${isCompleated ? "gif" : "png"}`
+    const badge = `badges/${goal.key}.${isCompleated ? "gif" : "png"}`
     const onClick = () => this.props.onStartGoal(goal.key);
     return <div key={goal.key}>
             <p>
@@ -26,7 +26,12 @@ class Menu extends Component {
   }
 
   render() {
-    return <div>{this.props.topics.map(this.renderTopic)}</div>;
+    return <div>
+      {this.props.topics.map(this.renderTopic)}
+      <footer>
+        By <a href="http://cutealism.com/">Cutealism</a>.
+      </footer>
+    </div>;
   }
 }
 
