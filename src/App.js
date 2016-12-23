@@ -5,6 +5,7 @@ import signal from './data/signal.json';
 import signalNetwork from './data/signal-network.json';
 import encrypt from './data/encrypt.json';
 import duckduckgo from './data/duckduckgo.json';
+import phonePasscode from './data/phone-passcode.json';
 import Step from './action/Step.js';
 import Navigation from './Navigation.js';
 
@@ -14,6 +15,7 @@ const data = {
   signalNetwork: signalNetwork,
   encrypt: encrypt,
   duckduckgo: duckduckgo,
+  phonePasscode: phonePasscode,
 };
 
 class App extends Component {

@@ -1,0 +1,49 @@
+{
+   "start":{
+      "description":"You're going to a protest or into some other situation where there might be police oppression. Maybe you're just going outside. But you don't want the cops to know about your anarchosyndicalist knitting circle, and Signal is just brimming with texts. How are you going to protect your skeins and your friends?",
+      "nextSteps":[
+         {
+            "prompt":"I don't know, tell me how!",
+            "step":"passcode"
+         },
+         {
+            "prompt":"Eh, if I get captured I'd like my friends to be arrested too.",
+            "step":"aww"
+         }
+      ]
+   },
+   "passcode":{
+      "description":"The first thing to know is that you should never, ever consent to your phone being searched if it's seized. Just say no! But with a warrant, your phone can be searched - unless you give it a passcode. Forcing someone to give up a passcode is considered a violation of the fifth amendment. A fingerprint unlock is less secure - with a warrant, the cops can still search your phone.",
+      "nextSteps":[
+         {
+            "prompt":"Awesome, let me set up a passcode!.",
+            "step":"yay"
+         },
+         {
+            "prompt":"Meh, I hate having rights.",
+            "step":"aww"
+         }
+      ]
+   },
+   "aww":{
+      "description":"We strongly recommend you protect your phone, to protect your friends and yourself, but if you won't maybe you can just crush it to a fine dust instead? ",
+      "nextSteps":[
+         {
+            "prompt":"bye, have fun with your unsecured texts.",
+            "restart":"true"
+         }
+      ]
+   },
+   "yay":{
+      "description":"Thanks for securing your phone with a password or passphrase. You're keeping yourself and your friends safer!",
+      "action":{
+         "type":"award"
+      },
+      "nextSteps":[
+         {
+            "prompt":"Time to go out and make some mayhem!",
+            "step":"exit"
+         }
+      ]
+   }
+}
