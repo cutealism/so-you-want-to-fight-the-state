@@ -6,6 +6,7 @@ import signalNetwork from './data/signal-network.json';
 import encrypt from './data/encrypt.json';
 import duckduckgo from './data/duckduckgo.json';
 import Step from './action/Step.js';
+import Navigation from './Navigation.js';
 
 const data = {
   intro: intro,
@@ -22,7 +23,7 @@ class App extends Component {
 
     this.sound = new Audio("tada.mp3");
     this.state = Object.assign({
-      location: 'start',
+      history: ['start'],
       goal: 'intro',
       completedGoals: {},
     }, localStorage.state ? JSON.parse(localStorage.state) : {});
@@ -32,9 +33,10 @@ class App extends Component {
     localStorage.state = JSON.stringify(this.state);
   }
 
-  updateStep = (step) => {
+  updateLocation = (goal, steps) => {
     this.setState({
-      location: step
+      goal: goal,
+      history: steps,
     }, () => {
       var stepAction = this.getStepData().action;
       if (stepAction) {
@@ -58,19 +60,27 @@ class App extends Component {
     }
   }
 
-  startGoal = (goal, step) => {
-    this.setState({
-      location: step || 'start',
-      goal: goal
-    });
-  };
+  startGoal = (goal) => {
+    this.updateLocation(goal, ['start'])
+  }
 
-  getStepData = () => data[this.state.goal][this.state.location]
-  getGoalStatus = (goalName) => this.state[this.statusKey(goalName)]
-  statusKey = (goalName) => "goal_status_" + goalName
+  updateStep = (step) => {
+    this.updateLocation(this.state.goal, [step, ...this.state.history])
+  }
+
+  getStepData = () => {
+    const {goal, history} = this.state
+    return data[goal][history[0]]
+  }
 
   restart = () => {
-    this.startGoal('intro', 'fight')
+    this.updateLocation('intro', ['fight'])
+  }
+
+  back = () => {
+    this.setState({
+      history: this.state.history.slice(1)
+    })
   }
 
   render() {
@@ -83,7 +93,13 @@ class App extends Component {
             onRestart={this.restart}
             data={step_data}
             completedGoals={this.state.completedGoals} />
-        {this.state.goal !== "intro" && <a className="restart" onClick={this.restart}>Restart</a>}
+
+        <Navigation
+          showBack={this.state.goal !== "intro" && this.state.history.length > 1}
+          onBack={this.back}
+          showRestart={this.state.goal !== "intro"}
+          onRestart={this.restart}
+        />
       </div>
   }
 }

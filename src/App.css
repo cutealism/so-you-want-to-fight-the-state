@@ -55,6 +55,15 @@ footer {
   padding-top: 20px;
 }
 
+.navigation {
+  padding-top: 2em;
+  display: flex;
+}
+
+.navigation a {
+  flex-grow: 1;
+}
+
 @media (max-aspect-ratio: 1/1) {
   button {
       width: 80%;
