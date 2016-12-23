@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Badge from './Badge.js';
 
 class Menu extends Component {
 
@@ -14,11 +15,10 @@ class Menu extends Component {
 
   renderGoal = (goal) =>  {
     const isCompleated = !!this.props.completedGoals[goal.key]
-    const badge = `badges/${goal.key}.${isCompleated ? "gif" : "png"}`
     const onClick = () => this.props.onStartGoal(goal.key);
     return <div key={goal.key}>
             <p>
-              <img src={badge} alt={goal.title + " badge"} onClick={onClick} /> 
+              <Badge onClick={onClick} goal={goal.key} color={isCompleated} />
               <br/>
               <button onClick={onClick}>{goal.title}</button>
             </p>

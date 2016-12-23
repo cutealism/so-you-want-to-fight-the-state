@@ -42,7 +42,7 @@
       "nextSteps":[
          {
             "prompt":"I want to do something else now!",
-            "step":"exit"
+            "restart": "true"
          }
       ]
    }

@@ -71,7 +71,7 @@
         "nextSteps": [
             {
                 "prompt": "I want to do something else now!",
-                "step": "exit"
+                "restart": "true"
             },
             {
                 "prompt": "I want to get my friends to use signal!",

@@ -67,7 +67,7 @@
         "nextSteps": [
             {
                 "prompt": "Bye, friendly person!",
-                "step": "exit"
+                "restart": "true"
             }
         ]
     },

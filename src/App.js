@@ -92,6 +92,7 @@ class App extends Component {
             onStartGoal={this.startGoal}
             onRestart={this.restart}
             data={step_data}
+            goal={this.state.goal}
             completedGoals={this.state.completedGoals} />
 
         <Navigation

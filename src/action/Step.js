@@ -16,7 +16,8 @@ class Step extends Component {
             onNextStep={this.props.onNextStep}
             onStartGoal={this.props.onStartGoal}
             onRestart={this.props.onRestart}
-            data={this.props.data} />
+            data={this.props.data}
+            goal={this.props.goal}/>
     }
   }
 
