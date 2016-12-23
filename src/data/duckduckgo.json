@@ -1,0 +1,49 @@
+{
+   "start":{
+      "description":"So, you want to learn something. That's admirable af. I mean, you're here, learning this. But you want to search for more stuff to learn! You could use Google, but Google remembers you and then it sometimes talks to the cops about you behind your back which is rude.",
+      "nextSteps":[
+         {
+            "prompt":"So who can I ask if not Google?",
+            "step":"duckduckgo"
+         },
+         {
+            "prompt":"Eh, sounds fine. What could go wrong?",
+            "step":"aww"
+         }
+      ]
+   },
+   "duckduckgo":{
+      "description":"A cool tool you can use if you don't want big Google tracking you and remembering who you are is DuckDuckGo. DuckDuckGo is a search engine that doesn't track you, store your personal information, or track you.",
+      "nextSteps":[
+         {
+            "prompt":"Cool, I'll totally use that now.",
+            "step":"yay"
+         },
+         {
+            "prompt":"You sound paranoid af, bud. I'll keep my infoboxes.",
+            "step":"aww"
+         }
+      ]
+   },
+   "aww":{
+      "description":"Well, if you want to use Google we won't stop you. But know that you're always being watched, tracked, remembered and profited from.",
+      "nextSteps":[
+         {
+            "prompt":"bye",
+            "restart":"true"
+         }
+      ]
+   },
+   "yay":{
+      "description":"Cool. Enjoy your new untracked searches!",
+      "action":{
+         "type":"award"
+      },
+      "nextSteps":[
+         {
+            "prompt":"I want to do something else now!",
+            "step":"exit"
+         }
+      ]
+   }
+}

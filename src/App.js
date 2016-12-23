@@ -4,6 +4,7 @@ import intro from './data/intro.json';
 import signal from './data/signal.json';
 import signalNetwork from './data/signal-network.json';
 import encrypt from './data/encrypt.json';
+import duckduckgo from './data/duckduckgo.json';
 import Step from './action/Step.js';
 
 const data = {
@@ -11,6 +12,7 @@ const data = {
   signal: signal,
   signalNetwork: signalNetwork,
   encrypt: encrypt,
+  duckduckgo: duckduckgo,
 };
 
 class App extends Component {
@@ -64,7 +66,7 @@ class App extends Component {
   };
 
   getStepData = () => data[this.state.goal][this.state.location]
-  getGoalStatus = (goalName) => this.state[this.statusKey(goalName)] 
+  getGoalStatus = (goalName) => this.state[this.statusKey(goalName)]
   statusKey = (goalName) => "goal_status_" + goalName
 
   restart = () => {
