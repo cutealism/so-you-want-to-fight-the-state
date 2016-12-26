@@ -13,14 +13,31 @@
       ]
    },
    "duckduckgo":{
-      "description":"A cool tool you can use if you don't want big Google tracking you and remembering who you are is DuckDuckGo. DuckDuckGo is a search engine that doesn't track you, store your personal information, or track you.",
+      "description":"A cool tool you can use if you don't want big Google tracking you and remembering who you are is <a href='https://duckduckgo.com/'>DuckDuckGo</a>. DuckDuckGo is a search engine that doesn't track you, store your personal information, or track you.",
       "nextSteps":[
          {
             "prompt":"Cool, I'll totally use that now.",
             "step":"yay"
          },
          {
+            "prompt":"idk if I'm going to remeber to use Duck Duck Go instead :/",
+            "step":"chrome"
+         },
+         {
             "prompt":"You sound paranoid af, bud. I'll keep my infoboxes.",
+            "step":"aww"
+         }
+      ]
+   },
+   "chrome":{
+      "description":"No problem, we totally get that! You can install addons for <a href='https://chrome.google.com/webstore/detail/duckduckgo-for-chrome/bkdgflcldnnnapblkhphbgpggdiikppg'>Chrome</a> or <a href='https://addons.mozilla.org/en-us/firefox/addon/duckduckgo-for-firefox/'>FireFox</a> that make Duck Duck Go your default search engine so you don't have to think about it!",
+      "nextSteps":[
+         {
+            "prompt":"Wow nice, I installed an add on!",
+            "step":"yay"
+         },
+         {
+            "prompt":"Meh, still seems hard an annoying.",
             "step":"aww"
          }
       ]
