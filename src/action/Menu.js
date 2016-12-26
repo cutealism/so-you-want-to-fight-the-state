@@ -29,7 +29,7 @@ class Menu extends Component {
     return <div>
       {this.props.topics.map(this.renderTopic)}
       <footer>
-        By <a href="http://cutealism.com/">Cutealism</a>.
+        Want to contribute? Source on <a href="https://github.com/cutealism/so-you-want-to-fight-the-state">GitHub</a>.
       </footer>
     </div>;
   }
