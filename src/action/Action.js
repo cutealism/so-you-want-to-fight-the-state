@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Badge from './Badge.js';
+import ReactDOM from 'react-dom'
 
 class Action extends Component {
 
@@ -11,6 +12,12 @@ class Action extends Component {
       } else if (data.restart) {
           this.props.onRestart();
       }
+  }
+
+  componentDidUpdate() {
+    ReactDOM.findDOMNode(this)
+      .querySelectorAll('a')
+      .forEach(e => e.setAttribute('target', '_blank'));
   }
 
   render() {
