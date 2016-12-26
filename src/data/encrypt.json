@@ -38,7 +38,7 @@
         ]
     },
     "windows": {
-        "description": "Cool.",
+        "description": "Cool. Sorry we didn't finsh this part yet :(",
         "nextSteps": [
             {
                 "prompt": "It worked! I did the thing!",
@@ -51,7 +51,7 @@
         ]
     },
     "mac": {
-        "description": "Cool.",
+        "description": "Cool. Sorry we didn't finsh this part yet :(",
         "nextSteps": [
             {
                 "prompt": "It worked! I did the thing!",
@@ -64,7 +64,7 @@
         ]
     },
     "yay": {
-        "description": "Nice job! Now you can communicate without eavesdroppers. You could work on something else now, or you could get your friends to install Signal too - so you can have secret-er conversations!",
+        "description": "Woohoo! Now your secrets are safe.",
         "action": {
             "type": "award"
         },
@@ -72,10 +72,6 @@
             {
                 "prompt": "I want to do something else now!",
                 "restart": "true"
-            },
-            {
-                "prompt": "I want to get my friends to use signal!",
-                "goal": "signalNetwork"
             }
         ]
     },

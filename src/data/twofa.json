@@ -1,0 +1,160 @@
+{
+    "start": {
+        "description": "Even if you have a super strong password, it's still a good idea to use 2 factor authentication (2fa) whenever you can. 2fa means you need two things to log into something. Usually that's a password, and a code you get from your phone or a text.",
+        "nextSteps": [
+            {
+                "prompt": "Sounds great, I'm in!",
+                "step": "platform"
+            },
+            {
+                "prompt": "I'm in too much of a hurry.",
+                "step": "aww"
+            }
+        ]
+    },
+    "platform": {
+        "description": "Lots of sites have an option for 2fa these days. Which do you want to set up first?",
+        "nextSteps": [
+            {
+                "prompt": "Google",
+                "step": "google"
+            },
+            {
+                "prompt": "Facebook",
+                "step": "facebook"
+            },
+            {
+                "prompt": "Twitter",
+                "step": "twitter"
+            },
+            {
+                "prompt": "Something else.",
+                "step": "lookitup"
+            }
+        ]
+    },
+    "google": {
+        "description": "Follow Google's <a href='https://www.google.com/landing/2step/#tab=how-it-works'>helpful instructions</a>!",
+        "nextSteps": [
+            {
+                "prompt": "I did it!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I couldn't do it :(",
+                "step": "help"
+            }
+        ]
+    },
+    "facebook": {
+        "description": "Facebook calls 2fa 'login approvals'. Follow their <a href='https://www.facebook.com/help/148233965247823'>helpful instructions</a> to get it set up!",
+        "nextSteps": [
+            {
+                "prompt": "I did it!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I couldn't do it :(",
+                "step": "help"
+            }
+        ]
+    },
+    "twitter": {
+        "description": "Twitter calls 2fa 'login verification'. Follow their <a href='https://support.twitter.com/articles/20170388'>helpful instructions</a> to get it set up!",
+        "nextSteps": [
+            {
+                "prompt": "I did it!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I couldn't do it :(",
+                "step": "help"
+            }
+        ]
+    },
+    "lookitup": {
+        "description": "Try seraching for '2 factor auth' and the site your are using. They might have it! If not, using a password manager to have strong passwords is the second best thing.",
+        "nextSteps": [
+            {
+                "prompt": "I found the info and turned on 2fa!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I want to set up a password manager instead!",
+                "goal": "passwordManager"
+            },
+            {
+                "prompt": "I couldn't do it :(",
+                "step": "help"
+            }
+        ]
+    },
+    "help": {
+        "description": "",
+        "nextSteps": [
+            {
+                "prompt": "I found the info and turned on 2fa!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I want to set up a password manager instead!",
+                "goal": "passwordManager"
+            },
+            {
+                "prompt": "I couldn't do it :(",
+                "step": "help"
+            }
+        ]
+    },
+    "help": {
+        "description": "Sorry we can't help you get 2fa set up :( Try asking someone you know for help. Even if they don't know how, maybe you can figure it out together!",
+        "nextSteps": [
+            {
+                "prompt": "Ok, I'll ask someone for help! brb",
+                "step":"gothelp"
+            },
+            {
+                "prompt": "I don't like asking for help",
+                "step": "aww"
+            }
+        ]
+    },
+    "gothelp": {
+        "description": "So you asked someone for help?",
+        "nextSteps": [
+            {
+                "prompt": "Yup! And we figured it out!",
+                "step":"yay"
+            },
+            {
+                "prompt": "Nope, I give up.",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "Sweet, now even if someone has your password, it'll be super hard for them to use break into your account.",
+        "action": {
+            "type": "award"
+        },
+        "nextSteps": [
+            {
+                "prompt": "I want to do something else now!",
+                "restart": "true"
+            },
+            {
+                "prompt": "I want to turn on 2fa for another site!",
+                "step": "platform"
+            }
+        ]
+    },
+    "aww": {
+        "description": "Maybe next time!",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}

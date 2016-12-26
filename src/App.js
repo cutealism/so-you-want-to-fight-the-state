@@ -8,7 +8,8 @@ import passwordManager from './data/password-manager.json';
 import encrypt from './data/encrypt.json';
 import duckduckgo from './data/duckduckgo.json';
 import phonePasscode from './data/phone-passcode.json';
-
+import tor from './data/tor.json';
+import twofa from './data/twofa.json';
 
 import Step from './action/Step.js';
 import Navigation from './Navigation.js';
@@ -21,6 +22,8 @@ const data = {
   duckduckgo: duckduckgo,
   phonePasscode: phonePasscode,
   passwordManager: passwordManager,
+  tor: tor,
+  twofa: twofa,
 };
 
 class App extends Component {

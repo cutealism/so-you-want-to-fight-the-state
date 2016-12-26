@@ -85,7 +85,7 @@
         "description": "So you asked someone or maybe Google for help?",
         "nextSteps": [
             {
-                "prompt": "Yup! And I figured it out!",
+                "prompt": "Yup! And we figured it out!",
                 "step":"yay"
             },
             {

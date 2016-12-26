@@ -63,7 +63,7 @@
                     },
                     {
                         "title": "2 factor auth",
-                        "key": "2fa"
+                        "key": "twofa"
                     }
                 ]
             },

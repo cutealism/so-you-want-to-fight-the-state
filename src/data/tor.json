@@ -1,0 +1,62 @@
+{
+    "start": {
+        "description": "When you use a normal browser, practically the whole internet knows where you go and what you look at.",
+        "nextSteps": [
+            {
+                "prompt": "That sounds bad.",
+                "step": "whattouse"
+            },
+            {
+                "prompt": "Like whatever, I don't care.",
+                "step": "platform"
+            }
+        ]
+    },
+    "whattouse": {
+        "description": "It is bad! Particularly if you are fighting the state. A way to browse the internet without the state knowing who you are is to use Tor.",
+        "nextSteps": [
+            {
+                "prompt": "Tor?",
+                "step": "whatis"
+            },
+            {
+                "prompt": "Rad, I already use Tor!",
+                "step": "yay"
+            }
+        ]
+    },
+    "whatis": {
+        "description": "Tor is a browser that lets you browse the internet anonymously. <a href='https://www.torproject.org/projects/torbrowser.html.en'>Learn more and download it here.</a>",
+        "nextSteps": [
+            {
+                "prompt": "I installed it!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I didn't do it.",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "Now you're ready to browse carefree!",
+        "action": {
+            "type": "award"
+        },
+        "nextSteps": [
+            {
+                "prompt": "I want to do something else now!",
+                "restart": "true"
+            }
+        ]
+    },
+    "aww": {
+        "description": "Maybe next time!",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}
