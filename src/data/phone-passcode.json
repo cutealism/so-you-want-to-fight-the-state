@@ -17,7 +17,7 @@
       "nextSteps":[
          {
             "prompt":"Awesome, let me set up a passcode!.",
-            "step":"yay"
+            "step":"platform"
          },
          {
             "prompt":"Meh, I hate having rights.",
@@ -25,6 +25,75 @@
          }
       ]
    },
+   "platform": {
+        "description": "What kind of phone do you have?",
+        "nextSteps": [
+            {
+                "prompt": "An Android!",
+                "step": "androidSetup"
+            },
+            {
+                "prompt": "An iPhone!",
+                "step": "iosSetup"
+            },
+            {
+                "prompt": "Something else.",
+                "step": "help"
+            }
+        ]
+    },
+   "androidSetup": {
+        "description": "Checkout <a href='http://www.howtogeek.com/253101/how-to-secure-your-android-phone-with-a-pin-password-or-pattern/'>this helpful artical</a> that steps you through adding a password to your phone!",
+        "nextSteps": [
+            {
+                "prompt": "I did it!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I couldn't do it",
+                "step": "help"
+            }
+        ]
+    },
+   "iosSetup": {
+        "description": "Checkout <a href='https://support.apple.com/en-us/HT204060'>this Apple help artical</a> that steps you through adding a password!",
+        "nextSteps": [
+            {
+                "prompt": "I did it!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I couldn't do it",
+                "step": "help"
+            }
+        ]
+    },
+    "help": {
+        "description": "Sorry we can't help you get your phone password set up :( Try asking someone you know for help. Even if they don't know how, maybe you can figure it out together!",
+        "nextSteps": [
+            {
+                "prompt": "Ok, I'll ask someone for help! brb",
+                "step":"gothelp"
+            },
+            {
+                "prompt": "I don't like asking for help",
+                "step": "aww"
+            }
+        ]
+    },
+    "gothelp": {
+        "description": "So you asked someone or maybe Google for help?",
+        "nextSteps": [
+            {
+                "prompt": "Yup! And I figured it out!",
+                "step":"yay"
+            },
+            {
+                "prompt": "Nope, I give up.",
+                "step": "aww"
+            }
+        ]
+    },
    "aww":{
       "description":"We strongly recommend you protect your phone, to protect your friends and yourself, but if you won't maybe you can just crush it to a fine dust instead? ",
       "nextSteps":[

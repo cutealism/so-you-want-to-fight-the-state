@@ -43,7 +43,7 @@
         ]
     },
      "iosInstall": {
-        "description": "To install Signal on an iOS device, visit https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8 and download the app.",
+        "description": "To install Signal on an iOS device, visit <a href='https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8'>the app store</a> and download the app. You can also search for 'Signal' in the App Store.",
         "nextSteps": [
             {
                 "prompt": "I did it!",
@@ -56,7 +56,7 @@
         ]
     },
      "chromeInstall": {
-        "description": "To install Signal for desktop, visit https://chrome.google.com/webstore/detail/signal-private-messenger/bikioccmkafdpakkkcpdbppfkghcmihk?hl=en .",
+        "description": "To install Signal for desktop, visit <a href='https://chrome.google.com/webstore/detail/signal-private-messenger/bikioccmkafdpakkkcpdbppfkghcmihk?hl=en'>the Chrome Webstore</a>.",
         "nextSteps": [
             {
                 "prompt": "I did it!",
