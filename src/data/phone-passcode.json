@@ -42,7 +42,7 @@
       "nextSteps":[
          {
             "prompt":"Time to go out and make some mayhem!",
-            "step":"exit"
+            "restart":"true"
          }
       ]
    }
