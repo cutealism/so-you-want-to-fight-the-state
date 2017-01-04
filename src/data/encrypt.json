@@ -1,6 +1,19 @@
 {
     "start": {
-        "description": "So, you're have someone else's secrets. Nice job! Someone trusts you. It takes a lot to get there. But are you protecting those secrets? How well? Maybe you have secrets of your own to protect. If you haven't encrypted your main computer, now's a great time to do it, especially if you'll be travelling. What kind of computer do you have?",
+        "description": "So, you're have someone else's secrets. Nice job! Someone trusts you. It takes a lot to get there. But are you protecting those secrets? How well? Maybe you have secrets of your own to protect. If you haven't encrypted your main computer, now's a great time to do it, especially if you'll be travelling.",
+        "nextSteps": [
+            {
+                "prompt": "Rad, let's encrypt!",
+                "step": "platform"
+            },
+            {
+                "prompt": "I'm not convinced I need to encrypt my computer.",
+                "step": "info"
+            }
+        ]
+    },
+    "platform": {
+        "description": "What kind of computer do you have?",
         "nextSteps": [
             {
                 "prompt": "Linux, natch.",
@@ -38,11 +51,15 @@
         ]
     },
     "windows": {
-        "description": "Cool. Sorry we didn't finsh this part yet :(",
+        "description": "Some versions of Windows have a tool called BitLocker. This <a href='http://www.pcworld.com/article/2308725/encryption/a-beginners-guide-to-bitlocker-windows-built-in-encryption-tool.html'>artical can help you get set up</a>!",
         "nextSteps": [
             {
-                "prompt": "It worked! I did the thing!",
+                "prompt": "I did it! My drive is protected with BitLocker!",
                 "step": "yay"
+            },
+            {
+                "prompt": "My version of Windows doesn't support BitLocker",
+                "step": "noBitLocker"
             },
             {
                 "prompt": "I don't have enough time & I'm terrified of bricking my computer.",
@@ -50,11 +67,23 @@
             }
         ]
     },
-    "mac": {
-        "description": "Cool. Sorry we didn't finsh this part yet :(",
+    "noBitLocker": {
+        "description": "Unfortunately you're best option right now is to upgrade to a version of Windows that does support BitLocker. If you can't do that, you'll have to keep an eye out for something else to come along. There were some 3rd party options in the past, but none are currently recommended widely.",
         "nextSteps": [
             {
-                "prompt": "It worked! I did the thing!",
+                "prompt": "Sorry we couldn't help more :(",
+                 "restart": "true"
+            }
+        ]
+    },
+    "mac": {
+        "description": "You're in luck! Full disk encryption is built into OSX, so your job is easy: Just turn it on! Here's <a href='https://support.apple.com/en-us/HT204837'>a quick help article from Apple</a> to walk you through it. One quick note, we don't recommend having Apple store your password in iCloud. If you do and someone was able to access your iCloud account, they would be able to decrypt your computer. ",
+        "nextSteps": [
+            {
+                "prompt": "Sucess! I enabled FileVault!",
+                "step": "yay"
+            },            {
+                "prompt": "I'm a pro: My harddrive was already encrypted!",
                 "step": "yay"
             },
             {
@@ -76,8 +105,21 @@
             }
         ]
     },
+    "info": {
+        "description": "Fair enough, it's good to understand why things are important! The main reason to encrypt your computer is if you are worried someone you don't trust will have physical access to your computer. You’re more at risk of your computer falling into the wrong hand when you’re traveling, especially if you’re crossing a border. Here's <a href='https://theintercept.com/2015/04/27/encrypting-laptop-like-mean/'>an article with more information</a> about why you should encrypt your computer.",
+        "nextSteps": [
+            {
+                "prompt": "Ok, now I'm in!",
+                "step": "platform"
+            },
+            {
+                "prompt": "Nope, it's not for me.",
+                "step": "aww"
+            }
+        ]
+    },
     "aww": {
-        "description": "Maybe next time!",
+        "description": "Sorry we couldn't help you encrypt your hard drive :( ",
         "nextSteps": [
             {
                 "prompt": "bye",

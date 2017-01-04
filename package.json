@@ -2,7 +2,7 @@
   "name": "so-you-want-to-fight-the-state",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fight.cutealism.com",
+  "homepage": "https://cutealism.com/fight",
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "react-scripts": "0.7.0"
