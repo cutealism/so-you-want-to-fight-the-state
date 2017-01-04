@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class Badge extends Component {
-
   render() {
     const {goal, color, onClick} = this.props;
     const badge = `badges/${goal}.${color ? "gif" : "png"}`

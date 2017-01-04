@@ -20,10 +20,21 @@ class Action extends Component {
       .forEach(e => e.setAttribute('target', '_blank'));
   }
 
+  componentDidMount() {
+    this.componentDidUpdate()
+  }
+
   render() {
+    const showBadge = this.props.data.action && this.props.data.action.type === 'award'
+    const badgeUrl = `badges/large/${this.props.goal}.gif`
     return <div>
-        {this.props.data.action && this.props.data.action.type === 'award' && <Badge goal={this.props.goal} color={true} />}
+        {showBadge && <Badge goal={this.props.goal} color={true} />}
         <p dangerouslySetInnerHTML={{__html: this.props.data.description}}></p>
+        {showBadge && <div>
+            <a href={`https://twitter.com/intent/tweet?text=${this.props.data.action.tweet}&hashtags=soyouwanttofightthestate`}>
+              Tweet your merit badge</a> or <a
+                download={badgeUrl} href={badgeUrl}>download to share!</a>
+          </div>}
         {this.props.data.nextSteps && this.props.data.nextSteps.map((prompt) =>
             <button
                 key={prompt.step || prompt.goal || "restart"}

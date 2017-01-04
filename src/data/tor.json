@@ -41,7 +41,8 @@
     "yay": {
         "description": "Now you're ready to browse carefree!",
         "action": {
-            "type": "award"
+            "type": "award",
+            "tweet": "I got a merit badge for using tor! pic.twitter.com/TKzWbSMSwf Check out http://cutealism.com/fight"
         },
         "nextSteps": [
             {

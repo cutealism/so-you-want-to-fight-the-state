@@ -106,7 +106,8 @@
    "yay":{
       "description":"Thanks for securing your phone with a password or passphrase. You're keeping yourself and your friends safer!",
       "action":{
-         "type":"award"
+         "type":"award",
+         "tweet": "I got a merit badge for using a password password! pic.twitter.com/cAMY8m0Dtg Check out http://cutealism.com/fight"
       },
       "nextSteps":[
          {

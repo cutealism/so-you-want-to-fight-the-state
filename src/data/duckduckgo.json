@@ -54,7 +54,8 @@
    "yay":{
       "description":"Cool. Enjoy your new untracked searches!",
       "action":{
-         "type":"award"
+         "type":"award",
+         "tweet": "I got a merit badge for keeping my searches secret! pic.twitter.com/c2ZfVW6ymZ Check out http://cutealism.com/fight"
       },
       "nextSteps":[
          {

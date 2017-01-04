@@ -71,7 +71,8 @@
     "yay": {
         "description": "Nice job! Now you can communicate without eavesdroppers. You could work on something else now, or you could get your friends to install Signal too - so you can have secret-er conversations!",
         "action": {
-            "type": "award"
+            "type": "award",
+            "tweet": "I got a merit badge for using Signal! pic.twitter.com/fJB3j9Ikrq Check out http://cutealism.com/fight"
         },
         "nextSteps": [
             {

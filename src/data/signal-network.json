@@ -62,7 +62,8 @@
     "yay": {
         "description": "Nice job! You're well on your way to subverting all kinds of state structures with your buds!",
         "action": {
-            "type": "award"
+            "type": "award",
+            "tweet": "I got a merit badge for getting my friends to use Signal! pic.twitter.com/yiRN34SZrG Check out http://cutealism.com/fight"
         },
         "nextSteps": [
             {

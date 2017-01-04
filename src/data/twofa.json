@@ -135,7 +135,8 @@
     "yay": {
         "description": "Sweet, now even if someone has your password, it'll be super hard for them to use break into your account.",
         "action": {
-            "type": "award"
+            "type": "award",
+            "tweet": "I got a merit badge for use 2fa! pic.twitter.com/I1dsTD60Dz Check out http://cutealism.com/fight"
         },
         "nextSteps": [
             {

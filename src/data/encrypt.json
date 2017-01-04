@@ -66,7 +66,8 @@
     "yay": {
         "description": "Woohoo! Now your secrets are safe.",
         "action": {
-            "type": "award"
+            "type": "award",
+            "tweet": "I got a merit badge for encrypting my computer! pic.twitter.com/OpVToVyEAI Check out http://cutealism.com/fight"
         },
         "nextSteps": [
             {
