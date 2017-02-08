@@ -1,6 +1,6 @@
 {
     "start": {
-        "description": "So, you're have someone else's secrets. Nice job! Someone trusts you. It takes a lot to get there. But are you protecting those secrets? How well? Maybe you have secrets of your own to protect. If you haven't encrypted your main computer, now's a great time to do it, especially if you'll be travelling.",
+        "description": "So, you have data you wanna protect. Maybe you even have someone else's secrets. Nice job! Someone trusts you. It takes a lot to get there. So are you protecting those secrets? How well? If you haven't encrypted your main computer, now's a great time to do it, especially if you'll be travelling.",
         "nextSteps": [
             {
                 "prompt": "Rad, let's encrypt!",
@@ -68,7 +68,7 @@
         ]
     },
     "noBitLocker": {
-        "description": "Unfortunately you're best option right now is to upgrade to a version of Windows that does support BitLocker. If you can't do that, you'll have to keep an eye out for something else to come along. There were some 3rd party options in the past, but none are currently recommended widely.",
+        "description": "Unfortunately your best option right now is to upgrade to a version of Windows that does support BitLocker. If you can't do that, you'll have to keep an eye out for something else to come along. There were some 3rd party options in the past, but none are currently recommended widely.",
         "nextSteps": [
             {
                 "prompt": "Sorry we couldn't help more :(",
@@ -106,7 +106,7 @@
         ]
     },
     "info": {
-        "description": "Fair enough, it's good to understand why things are important! The main reason to encrypt your computer is if you are worried someone you don't trust will have physical access to your computer. You’re more at risk of your computer falling into the wrong hand when you’re traveling, especially if you’re crossing a border. Here's <a href='https://theintercept.com/2015/04/27/encrypting-laptop-like-mean/'>an article with more information</a> about why you should encrypt your computer.",
+        "description": "Fair enough, it's good to understand why things are important! The main reasons to encrypt your computer are if you lose it or you are worried someone you don't trust will have physical access to your computer. You’re more at risk of your computer falling into the wrong hands when you’re traveling, especially if you’re crossing a border. Here's <a href='https://theintercept.com/2015/04/27/encrypting-laptop-like-mean/'>an article with more information</a> about why you should encrypt your computer.",
         "nextSteps": [
             {
                 "prompt": "Ok, now I'm in!",
@@ -119,7 +119,7 @@
         ]
     },
     "aww": {
-        "description": "Sorry we couldn't help you encrypt your hard drive :( ",
+        "description": "Sorry we couldn't help you encrypt your computer :( ",
         "nextSteps": [
             {
                 "prompt": "bye",
