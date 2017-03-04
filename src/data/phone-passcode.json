@@ -43,7 +43,7 @@
         ]
     },
    "androidSetup": {
-        "description": "Checkout <a href='http://www.howtogeek.com/253101/how-to-secure-your-android-phone-with-a-pin-password-or-pattern/'>this helpful artical</a> that steps you through adding a password to your phone!",
+        "description": "Checkout <a href='http://www.howtogeek.com/253101/how-to-secure-your-android-phone-with-a-pin-password-or-pattern/'>this helpful article</a> that steps you through adding a password to your phone!",
         "nextSteps": [
             {
                 "prompt": "I did it!",
@@ -56,7 +56,7 @@
         ]
     },
    "iosSetup": {
-        "description": "Checkout <a href='https://support.apple.com/en-us/HT204060'>this Apple help artical</a> that steps you through adding a password!",
+        "description": "Checkout <a href='https://support.apple.com/en-us/HT204060'>this Apple help article</a> that steps you through adding a password!",
         "nextSteps": [
             {
                 "prompt": "I did it!",

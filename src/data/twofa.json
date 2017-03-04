@@ -1,6 +1,6 @@
 {
     "start": {
-        "description": "Even if you have a super strong password, it's still a good idea to use 2 factor authentication (2fa) whenever you can. 2fa means you need two things to log into something. Usually that's a password, and a code you get from your phone or a text.",
+        "description": "Even if you have a super strong password, it's still a good idea to use 2 factor authentication (2FA) whenever you can. 2FA means you need two things to log into something. Usually that's a password, and a code you get from your phone or a text.",
         "nextSteps": [
             {
                 "prompt": "Sounds great, I'm in!",
@@ -13,7 +13,7 @@
         ]
     },
     "platform": {
-        "description": "Lots of sites have an option for 2fa these days. Which do you want to set up first?",
+        "description": "Lots of sites have an option for 2FA these days. Which do you want to set up first?",
         "nextSteps": [
             {
                 "prompt": "Google",
@@ -47,7 +47,7 @@
         ]
     },
     "facebook": {
-        "description": "Facebook calls 2fa 'login approvals'. Follow their <a href='https://www.facebook.com/help/148233965247823'>helpful instructions</a> to get it set up!",
+        "description": "Facebook calls 2FA 'login approvals'. Follow their <a href='https://www.facebook.com/help/148233965247823'>helpful instructions</a> to get it set up!",
         "nextSteps": [
             {
                 "prompt": "I did it!",
@@ -60,7 +60,7 @@
         ]
     },
     "twitter": {
-        "description": "Twitter calls 2fa 'login verification'. Follow their <a href='https://support.twitter.com/articles/20170388'>helpful instructions</a> to get it set up!",
+        "description": "Twitter calls 2FA 'login verification'. Follow their <a href='https://support.twitter.com/articles/20170388'>helpful instructions</a> to get it set up!",
         "nextSteps": [
             {
                 "prompt": "I did it!",
@@ -76,7 +76,7 @@
         "description": "Try seraching for '2 factor auth' and the site your are using. They might have it! If not, using a password manager to have strong passwords is the second best thing.",
         "nextSteps": [
             {
-                "prompt": "I found the info and turned on 2fa!",
+                "prompt": "I found the info and turned on 2FA!",
                 "step": "yay"
             },
             {
@@ -93,7 +93,7 @@
         "description": "",
         "nextSteps": [
             {
-                "prompt": "I found the info and turned on 2fa!",
+                "prompt": "I found the info and turned on 2FA!",
                 "step": "yay"
             },
             {
@@ -107,7 +107,7 @@
         ]
     },
     "help": {
-        "description": "Sorry we can't help you get 2fa set up :( Try asking someone you know for help. Even if they don't know how, maybe you can figure it out together!",
+        "description": "Sorry we can't help you get 2FA set up :( Try asking someone you know for help. Even if they don't know how, maybe you can figure it out together!",
         "nextSteps": [
             {
                 "prompt": "Ok, I'll ask someone for help! brb",
@@ -136,7 +136,7 @@
         "description": "Sweet, now even if someone has your password, it'll be super hard for them to use break into your account.",
         "action": {
             "type": "award",
-            "tweet": "I got a merit badge for use 2fa! pic.twitter.com/I1dsTD60Dz Check out http://cutealism.com/fight"
+            "tweet": "I got a merit badge for use 2FA! pic.twitter.com/I1dsTD60Dz Check out http://cutealism.com/fight"
         },
         "nextSteps": [
             {
@@ -144,7 +144,7 @@
                 "restart": "true"
             },
             {
-                "prompt": "I want to turn on 2fa for another site!",
+                "prompt": "I want to turn on 2FA for another site!",
                 "step": "platform"
             }
         ]
