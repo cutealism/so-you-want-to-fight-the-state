@@ -51,7 +51,7 @@
         ]
     },
     "windows": {
-        "description": "Some versions of Windows have a tool called BitLocker. This <a href='http://www.pcworld.com/article/2308725/encryption/a-beginners-guide-to-bitlocker-windows-built-in-encryption-tool.html'>artical can help you get set up</a>!",
+        "description": "Some versions of Windows have a tool called BitLocker. This <a href='http://www.pcworld.com/article/2308725/encryption/a-beginners-guide-to-bitlocker-windows-built-in-encryption-tool.html'>article can help you get set up</a>!",
         "nextSteps": [
             {
                 "prompt": "I did it! My drive is protected with BitLocker!",
@@ -83,7 +83,7 @@
                 "prompt": "Sucess! I enabled FileVault!",
                 "step": "yay"
             },            {
-                "prompt": "I'm a pro: My harddrive was already encrypted!",
+                "prompt": "I'm a pro: My hard-drive was already encrypted!",
                 "step": "yay"
             },
             {
