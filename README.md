@@ -9,3 +9,6 @@ cd so-you-want-to-fight-the-state
 npm install
 npm start
 ```
+
+## Quick Start
+You can visit a copy of the webpage at [Cutealism.com/fight](http://cutealism.com/fight/)
